@@ -1,4 +1,4 @@
-
+// erstellt am 08.10.2023
 public class ArrayCopy {
 	
 	// Ausgeführt an Test-Cases, welche folgendes abdecken:
