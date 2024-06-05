@@ -1,3 +1,4 @@
+// erstellt am 01.12.2023
 import javax.swing.*;
 import java.util.Timer;
 import java.awt.*;
