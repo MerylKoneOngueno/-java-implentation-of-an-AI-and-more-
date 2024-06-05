@@ -1,5 +1,5 @@
-package listen;
 // erstellt am 20.10.2023
+package listen;
 // eigene Implementation einer LinkedList
 public class DummyListeLinked implements DSAListe{
     
