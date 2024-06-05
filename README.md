@@ -1,1 +1,1 @@
-Predictor is a program in java that lets lets you type 'a' or 'b'. After a couple user inputs the program starts to predict the user's following key stroke.
+Predictor is a small AI that lets you type 'a' or 'b'. After a couple user inputs the program starts to predict the user's next key stroke before the user has typed it in. The percentage of right prediction is being calculated with each new user input.
