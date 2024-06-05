@@ -1,10 +1,11 @@
+//erstellt am 3.10.2023
 import java.util.Arrays;
 import java.util.Comparator;
-
+// erstellt am 
 public class DoubleSorting {
     record Pair<V, K>(V value, K key) {
     }
-    //sdfgsfdg
+    
 
     /**
      * Double sorting means to sort an array A according to values sorting key
