@@ -1,5 +1,5 @@
 
-public class DateUndTime {
+public class ArrayCopy {
 	
 	// Ausgeführt an Test-Cases, welche folgendes abdecken:
 	
