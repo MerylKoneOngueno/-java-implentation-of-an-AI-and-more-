@@ -1,5 +1,4 @@
-package newPizzaOng;
-
+// erstellt am 09.11.2023
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
