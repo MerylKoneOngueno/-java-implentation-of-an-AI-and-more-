@@ -118,8 +118,7 @@ public class DummyListe implements DSAListe {
 
 }
 
-
-package listen;
+// vorgegenes Interfrace
 
 public interface DSAListe {
 // Ein Element hinten anf�gen	
@@ -149,4 +148,74 @@ public interface DSAListe {
 		}
 	};
 }
+
+
+// Klasse mit main zum testen:
+public class ListenMain {
+/* 
+ * Hauptprogramm zum Testen der Listenimplementierungen
+ * Der gew�nschte Listentyp muss jeweils auskommentiert werden
+ * Ansonsten brauchen Sie in dieser Klasse keine �nderungen zu machen
+ * 
+ * Die Ausgabe des Programms soll sein
+ * 
+ *     0 : Hallo
+       1 : Test
+       2 : DSA
+------
+       0 : Hallo
+       1 : DSA
+------
+       0 : Eintrag000
+       1 : Eintrag001
+       2 : Eintrag002
+       3 : Eintrag003
+       4 : Zwischen3und4
+       5 : Eintrag004
+       6 : Eintrag006
+       7 : Sieben
+       8 : Eintrag008
+       9 : Eintrag009
+------
+
+ */
+	public static void main(String[] args) {
+//		DSAListe liste = new LinkedListe();
+//		DSAListe liste = new ArrayListe();
+		DSAListe liste = new DummyListe();
+		test1(liste);
+		test2(liste);
+	}
+
+	static void test1(DSAListe liste) {
+		liste.anhaengen("Hallo");
+		liste.anhaengen("Test");
+		System.out.println(liste.holen(0)+ "qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq");
+		liste.anhaengen("DSA");
+		System.out.println("euuewwdwqwd");
+		liste.alleAusgeben();
+		System.out.println("rfwrefgwg");
+		liste.loeschen(1);
+		System.out.println("tress");
+		liste.alleAusgeben();
+	}
+
+	static void test2(DSAListe liste) {
+		liste.alleLoeschen();
+		for(int i = 0;i<10;i++) {
+			liste.anhaengen(String.format("Eintrag%03d",i));
+		}
+		liste.alleAusgeben();
+		System.out.println("8888888888");
+		liste.ersetzen("Sieben", 7);
+		liste.alleAusgeben();
+		System.out.println("hier oben");
+		liste.einfuegen("Zwischen3und4", 4);
+		liste.loeschen(6);
+		System.out.println("cinqo");
+		liste.alleAusgeben();
+	}
+	
+}
+
 
