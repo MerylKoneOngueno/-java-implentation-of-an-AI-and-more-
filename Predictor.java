@@ -6,7 +6,7 @@ import java.awt.event.*;
 import java.util.TimerTask;
 
 // can only be executed in intelliJ
-// What this code does: the user is able to click the a or b button on the GUI. The program predicts the next user input. 
+// What this code does: the user is able to click the a or b button on the GUI. The program predicts the next user input and it calculates the percentage of right predictions.
 
 public class Predictor extends JDialog {
     private JPanel contentPane;
