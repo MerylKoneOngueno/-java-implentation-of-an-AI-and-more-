@@ -1,5 +1,6 @@
-package listen;
 //erstellt am 15.10.2023
+
+package listen;
 public class DummyListe implements DSAListe {
 
 	int anzahl=0;
